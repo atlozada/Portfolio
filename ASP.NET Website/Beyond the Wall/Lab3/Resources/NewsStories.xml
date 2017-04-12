@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<news>
+  <story>
+    <title>
+      Old Man Yells at Cloud
+    </title>
+    <img>
+      ../resources/oldmancloud.png
+    </img>
+    <date>
+      3/15/2017
+    </date>
+    <description>
+      In a not-too-surprising turn of events, an elderly local man was seen becoming irate with a cloud, who proceeded to gesture rudely at it and loudly complain about millenials.
+    </description>
+  </story>
+  
+  <story>
+    <title>
+      Newest Meme Already Dead
+    </title>
+    <img>
+      ../resources/trashdove.jpg
+    </img>
+    <date>
+      2/28/2017
+    </date>
+    <description>
+      Local sources are claiming that the latest meme has already died. Dean of Anthropology at Johns-Hopkins University and world-renowned Meme Historian Dr. Pepe states, "I didn't even know that was a thing."
+    </description>
+  </story>
+
+  <story>
+    <title>
+      Trump Doesn't Understand Checks and Balances
+    </title>
+    <img>
+      ../resources/trump_noseless.jpg
+    </img>
+    <date>
+      Literally all the time
+    </date>
+    <description>
+      Once again attempting to ban certain countries from entering the United States, Donald Trump furiously tweets about how the Judicial system is undermining his authority, seemingly unaware of the fact that Checks and Balances exist for a reason.
+    </description>
+  </story>
+
+  <story>
+    <title>
+      Professor E-Mails Study Guide Night Before Test
+    </title>
+    <img>
+      ../resources/rageface.png
+    </img>
+    <date>
+      3/15/2017
+    </date>
+    <description>
+      Surprising absolutely nobody, University Professor E-mails the whole class the study guide at 10pm, the night before the test. A local student comments, "He did?"
+    </description>
+  </story>  
+</news>

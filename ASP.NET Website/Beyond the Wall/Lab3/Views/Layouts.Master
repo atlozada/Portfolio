@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layouts.Master.cs" Inherits="Lab3.Views.Site1" %>
+<%@ Register Src="../scripts/OrderControl.ascx" TagPrefix="order" TagName="control"%>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title>Beyond the Wall</title>
+        <meta charset="utf-8" />
+        <link href="../Resources/style.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/master.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                    <ul>
+                        <li>
+                            <a href="Index.aspx">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="Orders.aspx">Previous Orders</a>
+                        </li>
+                        <li>
+                            <a href="Login.aspx">Admin Login</a>
+                        </li>
+                        <li>
+                        <form id="menuPage" runat="server" class="container">
+                            <asp:Button ID="displayOrder" runat="server" Text="Place Order" OnClick="toggleVisible" 
+                                style= "background: none!important; 
+                                        border: none; 
+                                        padding: 0!important; 
+                                        font: inherit;
+                                        cursor: pointer;" />
+                            <order:control runat="server" ID="orderControl" visible="false"/><br />
+                            
+
+                            
+                            
+                            <div class="commentSection">
+                                <asp:ScriptManager ID="commentScriptManager" runat="server"></asp:ScriptManager>
+                                <label>Add a comment!</label><br />
+                                <asp:TextBox ID="commentTextBox" runat="server"></asp:TextBox><br />                          
+                                <asp:Button runat="server" ID="commentBtn" Text="Add Comment" onclick="addComment"/>
+
+                                <asp:UpdatePanel ID="commentPanel" runat="server">
+                                    <ContentTemplate>
+                                        <asp:GridView ID="commentGrid" runat="server"></asp:GridView>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+           
+                                <asp:Button runat="server" ID="refreshBtn" Text="Refresh" onclick="loadComments"/>
+                            </div>
+                        </form>
+                        </li>
+                    </ul>
+            </header>
+        
+            <asp:ContentPlaceHolder ID="Body" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="banner">
+            <asp:Xml ID="XmlNews" runat="server" DocumentSource="../Resources/NewsStories.xml" TransformSource="../scripts/NewsStories.xslt" Visible=true></asp:Xml>
+        </div><br />
+
+ 
+
+    </body>
+</html>
