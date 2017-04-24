@@ -1,0 +1,1 @@
+A Dynamic Programming solution to the Needleman-Wunsch Algorithm for sequence alignment. This implementation takes two DNA sequences and creates a dynamic table to create the optimal alignment. The output is the optimal alignments for both strings and the optimal score.
