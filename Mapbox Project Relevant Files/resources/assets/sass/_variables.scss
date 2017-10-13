@@ -1,0 +1,48 @@
+// Color Palette
+$dark-grey: #636b6f;
+$blue-gray: #8eb4cb;
+$white: #ffffff;
+$light-green: #2ab27b;
+$ghost-white: #f5f8fa;
+$golden-yellow: #cbb956;
+$burnt-orange: #bf5329;
+$columbia-blue: #3097D1;
+$tufts-blue: #4ea0da;
+
+// Borders
+$laravel-border-color: darken($ghost-white, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: $columbia-blue; //brand-primary
+$brand-info: $blue-gray;
+$brand-success: $light-green; //brand-success
+$brand-warning: $golden-yellow; //brand-warning
+$brand-danger: $burnt-orange; //brand-danger
+
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$default-font: "Ubuntu", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+
+// Navbar
+$navbar-default-bg: $ghost-white;
+
+// Buttons
+$btn-default-color: $dark-grey;
+
+// Inputs
+$input-border: lighten($dark-grey, 40%);
+$input-border-focus: lighten($dark-grey, 25%);
+$input-color-placeholder: lighten($dark-grey, 30%);
+
+// Panels
+$panel-default-heading-bg: $white;
+
+// Sidebar
+$checked-color: $tufts-blue;
+$checkbox-color: $columbia-blue;

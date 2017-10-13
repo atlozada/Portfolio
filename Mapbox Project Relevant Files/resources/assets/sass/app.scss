@@ -1,0 +1,102 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+// Variables
+@import "variables";
+@import "placeholders";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.4/css/bootstrap3/bootstrap-switch.min.css");
+
+
+// Mapbox
+@import url("https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css");
+
+
+
+
+html {
+    @extend %defaultLayout;
+}
+
+body {
+    @extend %defaultLayout;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+    color: $blue-gray;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.subtitle {
+    font-size: 26px;
+}
+
+.links {
+    a {
+        @extend %link;
+    }
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.selection {
+    @extend %selection;
+    &>input {
+        @extend %inline;
+        & + label {
+            @extend %inline;
+        }
+    }
+
+    &>p {
+        color: $burnt-orange;
+    }
+}
+
+a {
+    &.nav {
+        font-size:26px;
+        color: $blue-gray;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+div {
+    &.navbar {
+        @extend %navbar;
+    }
+}
